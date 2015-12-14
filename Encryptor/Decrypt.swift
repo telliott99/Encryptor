@@ -52,7 +52,7 @@ extension Encryptor {
         return result
     }
     
-    func decryptMany(input: BinaryData) -> BinaryData {
+    func decryptMany(input: BinaryData, ivIn: BinaryData = BinaryData()) -> BinaryData {
         eprint("decryptMany")
         var i = 0
         var j = 0
@@ -60,6 +60,13 @@ extension Encryptor {
         var ret = BinaryData()
         var tmp = BinaryData()
         var currentIV = self.iv
+        
+        // however, if encryption and decryption are decoupled
+        // this instance needs the correct iv
+        
+        if ivIn.count != 0 {
+            currentIV = ivIn
+        }
         
         while i < input.count {
             j = min(input.count, i + n)

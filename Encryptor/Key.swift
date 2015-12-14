@@ -12,6 +12,19 @@ public class Key: BinaryData {
         data = []
     }
     
+    public convenience init(_ input: String, salt:Salt) {
+        self.init(input.utf8.map { UInt8($0) })
+        pw = input
+        self.stretch(saltIn: salt)
+    }
+
+    public convenience init(_ input: Key) {
+        self.init(input.pw.utf8.map { UInt8($0) })
+        pw = input.pw
+        self.stretch(saltIn: input.salt)
+        assert(self.data == input.data)
+    }
+    
     public func stretch(saltIn saltIn: Salt = Salt()) {
         // turn a password into a key with sufficient randomness
         // by key "stretching"

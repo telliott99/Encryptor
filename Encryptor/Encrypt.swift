@@ -80,7 +80,7 @@ extension Encryptor {
         
         // Encryptor class initializes an iv upon instantiation
         var currentIV = self.iv
-        
+                
         while i < input.count {
             j = min(input.count, i + n)
             eprint("encrypt round: \(i/16 + 1)")

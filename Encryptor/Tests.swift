@@ -38,7 +38,10 @@ public func testKey() {
     let salt = key.salt
     key = Key(password)
     key.stretch(saltIn: salt)
-    print("\(key)\n")
+    print("key:\n\(key)\n")
+    
+    let clone = Key(key)
+    print("clone:\n\(clone)")
 }
 
 public func testEncrypt() {
@@ -46,7 +49,7 @@ public func testEncrypt() {
     
     let password = "my secret"
     var key = Key(password)
-    print("\(Encryptor(key))\n")
+    print("Encryptor key:\n\(Encryptor(key))\n")
     
     print("after stretching:")
     key = Key(password)
@@ -119,5 +122,12 @@ public func testMultiples() {
     let sa = decryptedData.data.map {
         Character(UnicodeScalar(UInt32($0))) }
     print(String(sa))
-    
+}
+
+public func testAll() {
+    testBinaryData()
+    testKey()
+    testEncrypt()
+    testEncryptorEncryptDecrypt()
+    testMultiples()
 }

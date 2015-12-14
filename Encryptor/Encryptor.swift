@@ -19,7 +19,7 @@ public class Encryptor: CustomStringConvertible {
         return encryptMany(input)
     }
     
-    public func decrypt(input: BinaryData) -> BinaryData {
-        return decryptMany(input)
+    public func decrypt(input: BinaryData, ivIn: BinaryData = BinaryData()) -> BinaryData {
+        return decryptMany(input, ivIn: ivIn)
     }
 }
