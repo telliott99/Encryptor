@@ -43,63 +43,15 @@ func test() {
 Output:
 
 ```
-pw: my passphrase
-salt: bf5db5b3b7b0
 key:
 pw:   my passphrase
-data: bf30735360054c95e74d043bc6431192c86d4b21
-salt: bf5db5b3b7b0
+data: f2de6d46394e7e5ade06cfd947b10b2a28b0c012
+salt: 9cb34d9057a8
 iv:
-d04baeb8609f3588a94849841abdefb6
+552b1c6dc6b88aa150d51b44f44cd366
 msgText: This is just a bit too long
 54686973206973206a75737420612062697420746f6f206c6f6e67
-encryptMany
-encrypt round: 1
-encryptOneChunk
-msgLen: 16
-msg:
-54686973206973206a75737420612062
-keyLen: 16
-iv:
-d04baeb8609f3588a94849841abdefb6
-status: 0
-result:
-bf13c4338e52f350053de0eeb0caf889
-
-encrypt round: 2
-encryptOneChunk
-msgLen: 16
-msg:
-697420746f6f206c6f6e670000000000
-keyLen: 16
-iv:
-bf13c4338e52f350053de0eeb0caf889
-status: 0
-result:
-d2771ae90aabd31494762e2a823ffbfb
-
-cipherData: bf13c4338e52f350053de0eeb0caf889d2771ae90aabd31494762e2a823ffbfb
-
-decryptMany
-decryptOneChunk
-data:
-bf13c4338e52f350053de0eeb0caf889
-keyLen: 16
-iv:
-d04baeb8609f3588a94849841abdefb6
-status: 0
-result:
-54686973206973206a75737420612062
-
-decryptOneChunk
-data:
-d2771ae90aabd31494762e2a823ffbfb
-keyLen: 16
-iv:
-bf13c4338e52f350053de0eeb0caf889
-status: 0
-result:
-697420746f6f206c6f6e670000000000
+cipherData: 3d2d1846e203a94e7f54af54db6f6bd7525c59609be79b148fd0d164cd498e99
 
 decryptedData: 54686973206973206a75737420612062697420746f6f206c6f6e670000000000
 This is just a bit too long

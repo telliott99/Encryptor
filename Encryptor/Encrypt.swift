@@ -5,7 +5,7 @@ extension Encryptor {
     
     func encryptOneChunk(input: BinaryData, iv: BinaryData) -> BinaryData {
         
-        print("encryptOneChunk")
+        eprint("encryptOneChunk")
         
         // AES128 block size is 16 bytes
         let AES128BlockSize = 16  // bytes, or 128 bits
@@ -21,8 +21,8 @@ extension Encryptor {
         }
         
         let msgLen = msg.count
-        print("msgLen: \(msgLen)")
-        print("msg:\n\(BinaryData(msg))")
+        eprint("msgLen: \(msgLen)")
+        eprint("msg:\n\(BinaryData(msg))")
         
         // Int(CC_SHA1_DIGEST_LENGTH))) == 20
         // that's what we get from stretching
@@ -36,9 +36,9 @@ extension Encryptor {
         let keyData = Array<UInt8>(key16Data)
         
         let keyLen = keyData.count
-        print("keyLen: \(keyLen)")
+        eprint("keyLen: \(keyLen)")
         
-        print("iv:\n\(iv)")
+        eprint("iv:\n\(iv)")
         
         let algorithm = CCAlgorithm(kCCAlgorithmAES)
         let options = CCOptions(0)  // CBC
@@ -63,15 +63,15 @@ extension Encryptor {
             stdBufferSize,
             &resultLen)
         
-        print("status: \(status)")
+        eprint("status: \(status)")
         // [UInt8] -> BinaryData
         let result = BinaryData(cipherData)
-        print("result:\n\(result)\n")
+        eprint("result:\n\(result)\n")
         return result
     }
     
     func encryptMany(input: BinaryData) -> BinaryData {
-        print("encryptMany")
+        eprint("encryptMany")
         var i = 0
         var j = 0
         let n = 16
@@ -83,7 +83,7 @@ extension Encryptor {
         
         while i < input.count {
             j = min(input.count, i + n)
-            print("encrypt round: \(i/16 + 1)")
+            eprint("encrypt round: \(i/16 + 1)")
             tmp = self.encryptOneChunk(
                 input[i..<j],
                 iv: currentIV)

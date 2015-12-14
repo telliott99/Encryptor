@@ -30,8 +30,8 @@ public class Key: BinaryData {
         } else{
             salt = saltIn
         }
-        print("pw: \(pw)")
-        print("salt: \(salt)")
+        eprint("pw: \(pw)")
+        eprint("salt: \(salt)")
         
         let saltLen = salt.data.count
         // UInt8 not Int8!

@@ -1,9 +1,12 @@
-//
-//  Printer.swift
-//  Encryptor
-//
-//  Created by Tom Elliott on 12/14/15.
-//  Copyright © 2015 Tom Elliott. All rights reserved.
-//
-
 import Foundation
+
+var debug = false
+
+func eprint(s: String) {
+    if debug {
+        Swift.print(s)
+    }
+    else {
+        
+    }
+}

@@ -5,8 +5,8 @@ extension Encryptor {
     
     func decryptOneChunk(input: BinaryData, iv: BinaryData = BinaryData())  -> BinaryData {
         
-        print("decryptOneChunk")
-        print("data:\n\(input)")
+        eprint("decryptOneChunk")
+        eprint("data:\n\(input)")
         
         let stdBufferSize = 16 // AES128BlockSize in bytes
         
@@ -26,9 +26,9 @@ extension Encryptor {
         let keyData = Array<UInt8>(key16Data)
         
         let keyLen = keyData.count
-        print("keyLen: \(keyLen)")
+        eprint("keyLen: \(keyLen)")
         
-        print("iv:\n\(iv)")
+        eprint("iv:\n\(iv)")
         
         var status: Int32 = 0
         var resultLen = 0
@@ -46,14 +46,14 @@ extension Encryptor {
             stdBufferSize,
             &resultLen)
         
-        print("status: \(status)")
+        eprint("status: \(status)")
         let result = BinaryData(decryptedData)
-        print("result:\n\(result)\n")
+        eprint("result:\n\(result)\n")
         return result
     }
     
     func decryptMany(input: BinaryData) -> BinaryData {
-        print("decryptMany")
+        eprint("decryptMany")
         var i = 0
         var j = 0
         let n = 16
