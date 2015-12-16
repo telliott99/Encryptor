@@ -1,5 +1,8 @@
 import Foundation
 import CommonCrypto
+import BinaryData
+
+public typealias Salt = BinaryData
 
 public class Key: BinaryData {
     public var pw: String = ""

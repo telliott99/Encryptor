@@ -5,6 +5,7 @@ public func +(lhs: BinaryData, rhs: BinaryData) -> BinaryData {
 }
 
 public class BinaryData : CustomStringConvertible, Indexable {
+    
     public var data: [UInt8] = []
     
     // we allow data to be empty

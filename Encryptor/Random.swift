@@ -1,4 +1,5 @@
 import Foundation
+import BinaryData
 
 public func randomBinaryData(n: Int = 1) -> BinaryData {
     var buffer = [UInt8](

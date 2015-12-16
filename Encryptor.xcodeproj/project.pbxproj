@@ -12,15 +12,12 @@
 		75061F321C1F0C6000F78F55 /* EncryptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F311C1F0C6000F78F55 /* EncryptorTests.swift */; };
 		75061F461C1F0C6D00F78F55 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F3C1C1F0C6D00F78F55 /* Key.swift */; };
 		75061F471C1F0C6D00F78F55 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F3D1C1F0C6D00F78F55 /* Random.swift */; };
-		75061F481C1F0C6D00F78F55 /* IntStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F3E1C1F0C6D00F78F55 /* IntStuff.swift */; };
-		75061F491C1F0C6D00F78F55 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F3F1C1F0C6D00F78F55 /* Salt.swift */; };
-		75061F4A1C1F0C6D00F78F55 /* StringStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F401C1F0C6D00F78F55 /* StringStuff.swift */; };
-		75061F4B1C1F0C6D00F78F55 /* BinaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F411C1F0C6D00F78F55 /* BinaryData.swift */; };
 		75061F4C1C1F0C6D00F78F55 /* Decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F421C1F0C6D00F78F55 /* Decrypt.swift */; };
 		75061F4D1C1F0C6D00F78F55 /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F431C1F0C6D00F78F55 /* Encrypt.swift */; };
 		75061F4E1C1F0C6D00F78F55 /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F441C1F0C6D00F78F55 /* Encryptor.swift */; };
 		75061F4F1C1F0C6D00F78F55 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061F451C1F0C6D00F78F55 /* Tests.swift */; };
 		759CC45A1C1F14D200DB5DD1 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CC4591C1F14D200DB5DD1 /* Printer.swift */; };
+		75DF24E01C21F5F80009CBB7 /* BinaryData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DF24DF1C21F5F80009CBB7 /* BinaryData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,15 +39,12 @@
 		75061F331C1F0C6000F78F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75061F3C1C1F0C6D00F78F55 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		75061F3D1C1F0C6D00F78F55 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		75061F3E1C1F0C6D00F78F55 /* IntStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntStuff.swift; sourceTree = "<group>"; };
-		75061F3F1C1F0C6D00F78F55 /* Salt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt.swift; sourceTree = "<group>"; };
-		75061F401C1F0C6D00F78F55 /* StringStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStuff.swift; sourceTree = "<group>"; };
-		75061F411C1F0C6D00F78F55 /* BinaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryData.swift; sourceTree = "<group>"; };
 		75061F421C1F0C6D00F78F55 /* Decrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decrypt.swift; sourceTree = "<group>"; };
 		75061F431C1F0C6D00F78F55 /* Encrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
 		75061F441C1F0C6D00F78F55 /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
 		75061F451C1F0C6D00F78F55 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		759CC4591C1F14D200DB5DD1 /* Printer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
+		75DF24DF1C21F5F80009CBB7 /* BinaryData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BinaryData.framework; path = Carthage/Build/Mac/BinaryData.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DF24E01C21F5F80009CBB7 /* BinaryData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +70,7 @@
 		75061F181C1F0C5F00F78F55 = {
 			isa = PBXGroup;
 			children = (
+				75DF24DF1C21F5F80009CBB7 /* BinaryData.framework */,
 				75061F241C1F0C6000F78F55 /* Encryptor */,
 				75061F301C1F0C6000F78F55 /* EncryptorTests */,
 				75061F231C1F0C6000F78F55 /* Products */,
@@ -93,17 +89,13 @@
 		75061F241C1F0C6000F78F55 /* Encryptor */ = {
 			isa = PBXGroup;
 			children = (
-				75061F411C1F0C6D00F78F55 /* BinaryData.swift */,
 				75061F421C1F0C6D00F78F55 /* Decrypt.swift */,
 				75061F431C1F0C6D00F78F55 /* Encrypt.swift */,
 				75061F441C1F0C6D00F78F55 /* Encryptor.swift */,
 				75061F251C1F0C6000F78F55 /* Encryptor.h */,
-				75061F3E1C1F0C6D00F78F55 /* IntStuff.swift */,
 				75061F3C1C1F0C6D00F78F55 /* Key.swift */,
 				759CC4591C1F14D200DB5DD1 /* Printer.swift */,
 				75061F3D1C1F0C6D00F78F55 /* Random.swift */,
-				75061F3F1C1F0C6D00F78F55 /* Salt.swift */,
-				75061F401C1F0C6D00F78F55 /* StringStuff.swift */,
 				75061F451C1F0C6D00F78F55 /* Tests.swift */,
 				75061F271C1F0C6000F78F55 /* Info.plist */,
 			);
@@ -229,12 +221,8 @@
 			files = (
 				75061F471C1F0C6D00F78F55 /* Random.swift in Sources */,
 				75061F4F1C1F0C6D00F78F55 /* Tests.swift in Sources */,
-				75061F4A1C1F0C6D00F78F55 /* StringStuff.swift in Sources */,
-				75061F491C1F0C6D00F78F55 /* Salt.swift in Sources */,
 				759CC45A1C1F14D200DB5DD1 /* Printer.swift in Sources */,
-				75061F481C1F0C6D00F78F55 /* IntStuff.swift in Sources */,
 				75061F4E1C1F0C6D00F78F55 /* Encryptor.swift in Sources */,
-				75061F4B1C1F0C6D00F78F55 /* BinaryData.swift in Sources */,
 				75061F4D1C1F0C6D00F78F55 /* Encrypt.swift in Sources */,
 				75061F461C1F0C6D00F78F55 /* Key.swift in Sources */,
 				75061F4C1C1F0C6D00F78F55 /* Decrypt.swift in Sources */,
@@ -355,6 +343,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Encryptor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -375,6 +367,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Encryptor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

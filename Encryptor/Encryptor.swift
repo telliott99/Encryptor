@@ -1,4 +1,6 @@
 import Foundation
+import BinaryData
+
 
 public class Encryptor: CustomStringConvertible {
     

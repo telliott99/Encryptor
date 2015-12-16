@@ -1,0 +1,10 @@
+framework module BinaryData {
+  umbrella header "BinaryData.h"
+
+  export *
+  module * { export * }
+}
+
+module BinaryData.Swift {
+    header "BinaryData-Swift.h"
+}

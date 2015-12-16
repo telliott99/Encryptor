@@ -1,4 +1,5 @@
 import Foundation
+import BinaryData
 
 public func testBinaryData() {
     print("test BinaryData")
